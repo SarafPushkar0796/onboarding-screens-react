@@ -1,0 +1,33 @@
+.App {
+	font-family: "Inter", sans-serif;
+}
+
+/* Custom CSS */
+.form-center {
+    width: 100%;    
+    margin: auto;
+}
+
+.bs-stepper .step-trigger {
+    display: inline-flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    font-size: 1rem;
+    font-weight: 700;
+    line-height: 1.5;
+    color: #6c757d;
+    text-align: center;
+    text-decoration: none;
+    white-space: nowrap;
+    vertical-align: middle;
+    -webkit-user-select: none;
+    user-select: none;
+    background-color: transparent;
+    border: none;
+    border-radius: 50%!important;
+    transition: background-color .15s ease-out, color .15s ease-out;
+}
+
+.select-card:hover{cursor: pointer;}
