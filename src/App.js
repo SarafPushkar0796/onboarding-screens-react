@@ -1,6 +1,4 @@
 import './App.css';
-import 'bs-stepper/dist/css/bs-stepper.css'
-import 'bs-stepper/dist/js/bs-stepper'
 import React from 'react';
 import StepperForm from './StepperForm';
 
