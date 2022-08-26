@@ -87,7 +87,7 @@ export default function StepperForm() {
                                 <div className="bs-stepper-header">
                                     <div className="step" data-target="#test-l-1">
                                         <button className={activeStepOne ? "step-trigger active" : "step-trigger"}>
-                                            <span className={activeStepOne ? "bs-stepper-circle text-white" : "bs-stepper-circle border border-secondary"}>
+                                            <span className={activeStepOne ? "bs-stepper-circle-custom text-white" : "bs-stepper-circle border border-secondary"}>
                                                 {
                                                     stepOneComp ? <i className="text-primary bi bi-check-circle-fill" style={{fontSize: '2rem', marginTop: '-0.6rem'}}></i> : 1
                                                 }
@@ -97,7 +97,7 @@ export default function StepperForm() {
                                     <div className={stepFour ? "line border-primary border-top" : "line"}></div>
                                     <div className="step" data-target="#test-l-2">
                                         <button className={stepTwo ? "step-trigger active" : "step-trigger"}>
-                                            <span className={stepTwo ? "bs-stepper-circle text-white" : "bs-stepper-circle border border-secondary"}>
+                                            <span className={stepTwo ? "bs-stepper-circle-custom text-white" : "bs-stepper-circle border border-secondary"}>
                                                 {
                                                     stepTwoComp ? <i className="text-primary bi bi-check-circle-fill" style={{fontSize: '2rem', marginTop: '-0.6rem'}}></i> : 2
                                                 }
@@ -107,7 +107,7 @@ export default function StepperForm() {
                                     <div className={stepFour ? "line border-primary border-top" : "line"}></div>
                                     <div className="step" data-target="#test-l-3">
                                         <button className={stepThree ? "step-trigger active" : "step-trigger"}>
-                                            <span className={stepThree ? "bs-stepper-circle text-white" : "bs-stepper-circle border border-secondary"}>
+                                            <span className={stepThree ? "bs-stepper-circle-custom text-white" : "bs-stepper-circle border border-secondary"}>
                                                 {
                                                     stepThreeComp ? <i className="text-primary bi bi-check-circle-fill" style={{fontSize: '2rem', marginTop: '-0.6rem'}}></i> : 3
                                                 }
@@ -117,7 +117,7 @@ export default function StepperForm() {
                                     <div className={stepFour ? "line border-primary border-top" : "line"}></div>
                                     <div className="step" data-target="#test-l-4">
                                         <button className="step-trigger">
-                                            <span className={stepFour ? "bs-stepper-circle text-white" : "bs-stepper-circle border border-secondary"}>
+                                            <span className={stepFour ? "text-white" : "bs-stepper-circle border border-secondary"}>
                                                 {
                                                     stepFour ? <i className="text-primary bi bi-check-circle-fill" style={{fontSize: '2rem', marginTop: '-0.6rem'}}></i> : 4
                                                 }

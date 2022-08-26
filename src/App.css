@@ -30,4 +30,21 @@
     transition: background-color .15s ease-out, color .15s ease-out;
 }
 
+.bs-stepper-circle-custom{
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    -ms-flex-line-pack: center;
+        align-content: center;
+    -ms-flex-pack: center;
+        justify-content: center;
+    width: 2em;
+    height: 2em;
+    padding: .5em 0;
+    margin: .25rem;
+    line-height: 0.8rem!important;
+    color: #ffffff!important;
+    background-color: #007bff!important;
+    border-radius: 1em;
+}
+
 .select-card:hover{cursor: pointer;}
