@@ -12,8 +12,7 @@ export default function StepperForm() {
     // steps completion progress
     const [stepOneComp, setStepOneComp] = useState(false)
     const [stepTwoComp, setStepTwoComp] = useState(false)
-    const [stepThreeComp, setStepThreeComp] = useState(false)
-    const [stepFourComp, setStepFourComp] = useState(false)
+    const [stepThreeComp, setStepThreeComp] = useState(false)    
 
     const [selfCardSelect, setSelfCardSelect] = useState(false)
     const [teamCardSelect, setTeamCardSelect] = useState(false)    
@@ -27,29 +26,25 @@ export default function StepperForm() {
     // function called on every button click
     function nextStep(step) {
         switch (step) {
-            case 'two': {
+            case 'two': 
                 setActiveStepOne(false)
                 setStepOneComp(true)
-                setStepTwo(true)
-            }
+                setStepTwo(true)            
                 break;
-            case 'three': {
+
+            case 'three': 
                 setStepTwo(false)
                 setStepTwoComp(true)
-                setStepThree(true)                
-            }
+                setStepThree(true)                            
                 break;
-            case 'four': {
+
+            case 'four': 
                 setStepThree(false)
                 setStepThreeComp(true)
-                setStepFour(true)                
-            }
+                setStepFour(true)                            
                 break;
-            case 'submit': {
-                setStepFour(false)
-                setStepFourComp(true)
-            }
-                break;
+
+            case 'submit': setStepFour(false); break;
             default: break;
         }
     }
@@ -57,16 +52,16 @@ export default function StepperForm() {
     // function called on every card click
     function selectCard(str){
         switch (str){
-            case 'myself': {
+            case 'myself': 
                 setSelfCardSelect(true)
                 setTeamCardSelect(false)
-            }
                 break;
-            case 'team': {
+                
+            case 'team': 
                 setSelfCardSelect(false)
                 setTeamCardSelect(true)
-            }
                 break;
+
             default: break;
         }
     }
